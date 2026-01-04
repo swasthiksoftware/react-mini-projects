@@ -2,6 +2,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import {DigitalClock} from "./components/DigitalClock";
 import {BMICalculatorApp} from "./components/BMICalculatorApp";
 import CurrencyConvertor from "./components/CurrencyConvertor";
+import Posts from "./src/components/Posts";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <li><Link to="/clock">DigitalClock</Link> |{" "}</li>
         <li><Link to="/bmi">BMICalculator</Link> |{" "}</li>
         <li><Link to="/currencyconverter">CurrencyConverter</Link></li>
+        <li><Link to="/posts">View Posts</Link></li>
 </ul>
       </nav>
 
@@ -26,6 +28,7 @@ function App() {
         <Route path="/clock" element={<DigitalClock />} />
         <Route path="/bmi" element={<BMICalculatorApp />} />
         <Route path="/currencyconverter" element={<CurrencyConvertor />} />
+        <Route path="/posts" element={<Posts />} />
       </Routes>
     </>
   );

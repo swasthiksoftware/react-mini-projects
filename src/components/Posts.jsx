@@ -4,7 +4,7 @@ const Posts = () => {
   const [posts, setPosts] = useState([]);
 const [loading, setLoading] = useState(true);
   useEffect(() => {
-  fetch("https://your-backend-url.onrender.com/api/posts")
+  fetch("https://blog-backend-1-2orn.onrender.com//api/posts")
     .then(res => res.json())
     .then(data => {
       setPosts(data);

@@ -2,7 +2,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import {DigitalClock} from "./components/DigitalClock";
 import {BMICalculatorApp} from "./components/BMICalculatorApp";
 import CurrencyConvertor from "./components/CurrencyConvertor";
-import Posts from "./src/components/Posts";
+import Posts from "./components/Posts";
 
 
 function App() {
